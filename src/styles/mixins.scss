@@ -1,0 +1,98 @@
+@use 'variables' as var;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@mixin breakpoint($name) {
+  @if not map-has-key($grid-breakpoints, $name) {
+    @warn "Warning: `#{$name}` is not a valid breakpoint name.";
+  } @else {
+    @media (max-width: map-get($grid-breakpoints, $name)) {
+      @content;
+    }
+  }
+}
+
+@mixin kanit() {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+@mixin rubik() {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+@mixin roboto() {
+  font-family: var(--font-tertiary);
+  font-weight: var(--font-weight-light);
+}
+
+@mixin button-text-style() {
+  @include rubik();
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin h1() {
+  @include kanit();
+  font-weight: var(--font-weight-bold);
+  font-size: 6rem;
+  line-height: 7.6rem;
+
+  @include breakpoint(sm) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+@mixin h2() {
+  @include kanit();
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  line-height: 7.2rem;
+  margin-bottom: 3*var.$spacer;
+  position: relative;
+  padding-top: 4*var.$spacer;
+  margin-top: 0;
+
+  @include breakpoint(sm) {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+
+  &:after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background: transparent linear-gradient(90deg, #FFD500 0%, #EC6608 15%, #E41311 29%, #E50076 44%, #0095DB 58%, #38B6AB 72%, #164194 86%, var(--accent-green) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #FFD500 0%, #EC6608 15%, #E41311 29%, #E50076 44%, #0095DB 58%, #38B6AB 72%, #164194 86%, #00964F 100%) 0% 0% no-repeat padding-box;
+  }
+
+  &.is-centered {
+    &:after {
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin h4() {
+  @include kanit();
+  font-weight: var(--font-weight-bold);
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+}

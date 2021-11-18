@@ -1,0 +1,27 @@
+.c-alert {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-regular);
+  color: var(--color-white);
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 40px;
+  min-width: 100px;
+  padding: 8px 24px;
+  margin: 0;
+  border: 1px solid transparent;
+  outline: 0;
+  border-radius: 0.3rem;
+}
+
+.c-success {
+  background-color: var(--color-success);
+  color: var(--color-primary-text);
+}
+
+.c-error {
+  background-color: var(--color-error);
+  color: var(--color-secondary-text);
+}

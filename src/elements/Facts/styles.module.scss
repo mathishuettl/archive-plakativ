@@ -1,0 +1,44 @@
+.c-fact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -4*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    margin-top: -1*var.$spacer;
+  }
+}
+
+.c-fact-box {
+  margin-top: 4*var.$spacer;
+  width: calc(50% - 4*#{var.$spacer});
+  padding: 3*var.$spacer 4*var.$spacer;
+  background: var(--color-section);
+
+  &:nth-child(2n) {
+    margin-left: auto;
+  }
+
+  @include mixin.breakpoint(md) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: var.$spacer;
+  }
+}
+
+.c-fact-label {
+  margin: 0;
+
+  @include mixin.kanit();
+  font-weight: var(--font-weight-bold);
+  font-size: 1.4rem;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+}
+
+.c-fact-text {
+  margin: 0;
+}
+
+.c-fact-box-white {
+  background: var(--color-white);
+}

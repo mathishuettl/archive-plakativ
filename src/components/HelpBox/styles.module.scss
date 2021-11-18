@@ -1,0 +1,34 @@
+.c-help-box {
+  background: var(--color-section);
+  padding: 6*var.$spacer 4*var.$spacer;
+}
+
+.c-heading {
+  margin-top: 0;
+}
+
+.c-link {
+  display: flex;
+  color: var(--color-success);
+  text-decoration: none;
+  align-items: center;
+  margin-top: 3*var.$spacer;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-text, .c-icon {
+  color: inherit;
+}
+
+.c-text {
+  margin: 0;
+}
+
+.c-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: var.$spacer;
+}

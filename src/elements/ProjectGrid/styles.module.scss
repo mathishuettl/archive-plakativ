@@ -1,0 +1,30 @@
+.c-button {
+  margin-top: 13*var.$spacer;
+}
+
+.c-tile-col {
+  width: calc(100% / 3 - 6*#{var.$spacer});
+  margin-top: 7*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    width: 100%;
+    margin-top: 2*var.$spacer;
+  }
+}
+
+.c-tile-row {
+  justify-content: space-between;
+  margin-top: -7*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    margin-top: -2*var.$spacer;
+  }
+}
+
+.c-wysiwyg-container {
+  margin-bottom: 13*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    margin-bottom: 5*var.$spacer;
+  }
+}

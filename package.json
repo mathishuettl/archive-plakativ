@@ -1,0 +1,97 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "emailjs-com": "^3.2.0",
+    "eslint-config-gatsby-standard": "^3.0.2",
+    "eslint-webpack-plugin": "^3.0.1",
+    "gatsby": "^3.13.0",
+    "gatsby-background-image": "^1.5.3",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-breakpoints": "^1.3.5",
+    "gatsby-plugin-gdpr-cookies": "^2.0.6",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
+    "gatsby-plugin-offline": "^4.13.0",
+    "gatsby-plugin-preact": "^5.13.0",
+    "gatsby-plugin-react-helmet": "^4.13.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^4.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-transition-link": "^1.20.5",
+    "gatsby-plugin-webfonts": "^2.1.1",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-source-wordpress": "^5.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
+    "gbimage-bridge": "^0.1.4",
+    "gsap": "^3.5.1",
+    "husky": "^7.0.2",
+    "js-cookie": "^2.2.1",
+    "lint-staged": "^11.1.2",
+    "node-sass": "^6.0.1",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.3.6",
+    "postcss-custom-properties": "^11.0.0",
+    "preact": "^10.5.7",
+    "preact-render-to-string": "^5.1.12",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-accessible-accordion": "^4.0.0",
+    "react-dom": "^17.0.2",
+    "react-google-recaptcha": "^2.1.0",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.15.0",
+    "react-html-parser": "^2.0.2",
+    "react-switch": "^5.0.1",
+    "sass": "^1.39.0",
+    "swiper": "^7.0.0",
+    "uuid": "^8.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-loader": "^4.0.2",
+    "gatsby-plugin-eslint": "^4.0.0",
+    "gatsby-plugin-root-import": "^2.0.5",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.17",
+    "prettier": "^2.3.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint-all": "eslint src",
+    "lint-all-fix": "eslint --fix src",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint src"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

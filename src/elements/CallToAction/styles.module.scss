@@ -1,0 +1,9 @@
+.c-heading {
+  &:after {
+    display: none;
+  }
+}
+
+.c-button {
+  margin-top: 3*var.$spacer;
+}

@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["src", "./src"]
+        ]
+      }
+    }
+  },
+  "extends": "gatsby-standard"
+}

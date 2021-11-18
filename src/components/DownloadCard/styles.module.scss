@@ -1,0 +1,44 @@
+.c-download-card {
+  background: var(--color-white);
+  padding: 6*var.$spacer 4*var.$spacer;
+  margin-top: 4*var.$spacer;
+  display: flex;
+  align-items: center;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include mixin.breakpoint(sm) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.c-left {
+  text-align: left;
+}
+
+.c-download-link {
+  border-left: 2px dotted var(--color-primary);
+  padding: 4*var.$spacer;
+  margin-left: 4*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    border-left: 0;
+    border-top: 2px dotted var(--color-primary);
+    padding: 0;
+    margin-left: 0;
+    padding-top: 4*var.$spacer;
+    margin-top: 2*var.$spacer;
+    text-align: left;
+  }
+}
+
+.c-heading {
+  margin-top: 0;
+}
+
+.c-text {
+  margin: 0;
+}

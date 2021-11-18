@@ -1,0 +1,7 @@
+.c-card {
+  margin-top: 4*var.$spacer;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}

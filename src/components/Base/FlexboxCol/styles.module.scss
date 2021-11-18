@@ -1,0 +1,15 @@
+.col {
+  display: block;
+}
+
+@for $i from 1 through 12 {
+  .width#{$i} {
+    width: percentage(math.div($i, 12));
+  }
+}
+
+@for $i from 1 through 12 {
+  .offset#{$i} {
+    margin-left: percentage(math.div($i, 12));
+  }
+}

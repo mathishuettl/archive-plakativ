@@ -1,0 +1,41 @@
+.c-col {
+  @include mixin.breakpoint(sm) {
+    width: 100%;
+  }
+}
+
+.c-left-col {
+  padding-right: 5*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    padding-right: 0;
+  }
+
+  &.c-text-col {
+  }
+
+  &.c-image-col {
+  }
+}
+
+.c-right-col {
+  padding-left: 5*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    padding-left: 0;
+  }
+
+  &.c-text-col {
+  }
+
+  &.c-image-col {
+  }
+}
+
+.c-button {
+  margin-top: 3*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    margin-top: 2*var.$spacer;
+  }
+}

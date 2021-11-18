@@ -1,0 +1,37 @@
+.c-left-col {
+  padding-right: 9*var.$spacer;
+  position: relative;
+
+  @include mixin.breakpoint(sm) {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 6*var.$spacer;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px dotted var(--color-black);
+    display: block;
+
+    @include mixin.breakpoint(sm) {
+      border-left: 0;
+      border-bottom: 1px dotted var(--color-black);
+      left: 0;
+      top: initial;
+    }
+  }
+}
+
+.c-right-col {
+  padding-left: 9*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 6*var.$spacer;
+  }
+}

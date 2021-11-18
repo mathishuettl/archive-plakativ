@@ -1,0 +1,162 @@
+.c-footer {
+  background: var(--color-black);
+}
+
+.c-social-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: 7*var.$spacer;
+  list-style: none;
+}
+
+.c-social-bar-icon {
+
+}
+
+.c-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6*var.$spacer;
+  height: 6*var.$spacer;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.c-social-icon-svg {
+  height: 3*var.$spacer;
+}
+
+.c-brand-col {
+  width: 200px;
+
+  @include mixin.breakpoint(md) {
+    margin: 0 auto;
+  }
+}
+
+.c-footer-menu-link {
+  @include mixin.button-text-style;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0;
+}
+
+.c-footer-menu-list, .c-footer-menu-list-horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-footer-menu-item {
+  margin-top: 4*var.$spacer;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-footer-header {
+  margin-bottom: 6*var.$spacer;
+  margin-top: 0;
+
+  @include mixin.breakpoint(md) {
+    margin-top: 6*var.$spacer;
+    margin-bottom: 3*var.$spacer;
+  }
+}
+
+.c-footer-col {
+  @include mixin.breakpoint(md) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.c-footer-row {
+
+}
+
+.c-socket {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6*var.$spacer 0;
+  margin-top: 14*var.$spacer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixin.breakpoint(lg) {
+    flex-direction: column;
+  }
+  @include mixin.breakpoint(md) {
+    margin-top: 6*var.$spacer;
+  }
+}
+
+.c-footer-section {
+  padding-bottom: 0;
+}
+
+.c-footer-menu-list-horizontal {
+  display: flex;
+
+  @include mixin.breakpoint(md) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.c-footer-menu-item-horizontal {
+  margin-left: 4*var.$spacer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include mixin.breakpoint(md) {
+    margin-top: 4*var.$spacer;
+    margin-left: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.c-address {
+  @include mixin.breakpoint(lg) {
+    margin-bottom: 3*var.$spacer;
+  }
+  @include mixin.breakpoint(md) {
+    order: 2;
+    margin-top: 6*var.$spacer;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.c-address-element {
+  @include mixin.roboto;
+  font-weight: var(--font-weight-medium);
+  font-size: 1.3rem;
+  line-height: 3.3rem;
+  color: var(--color-socket);
+  margin-left: 4*var.$spacer;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @include mixin.breakpoint(md) {
+    margin-left: 0;
+    text-align: center;
+    line-height: 2.2rem;
+  }
+}
+
+.c-socket-menu {
+
+}

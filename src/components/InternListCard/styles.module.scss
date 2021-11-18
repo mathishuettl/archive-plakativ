@@ -1,0 +1,56 @@
+.c-intern-list-card {
+  display: flex;
+  background: var(--color-white);
+  padding: 6*var.$spacer 4*var.$spacer;
+  flex-wrap: wrap;
+}
+
+.c-heading {
+  margin-top: 0;
+}
+
+.c-link {
+  color: var(--color-success);
+  display: block;
+  margin-top: var.$spacer;
+  text-decoration: none;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.c-icon {
+  margin-right: var.$spacer;
+  height: 3*var.$spacer;
+}
+
+.c-text {
+  margin-bottom: 0;
+  color: inherit;
+}
+
+.c-left {
+  width: 50%;
+  padding-right: 4*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+.c-right {
+  padding-left: 4*var.$spacer;
+  width: 50%;
+  border-left: 2px dotted var(--color-primary);
+
+  @include mixin.breakpoint(md) {
+    padding-left: 0;
+    width: 100%;
+    border-left: 0;
+    border-top: 2px dotted var(--color-primary);
+    padding-top: 4*var.$spacer;
+    margin-top: 4*var.$spacer;
+  }
+}

@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  @include mixin.roboto();
+  font-size: 10px;
+}
+
+body {
+  padding-top: var(--header-height);
+}
+
+p {
+  @include mixin.roboto();
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-top: 2*var.$spacer;
+  margin-bottom: 2*var.$spacer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wysiwyg-container {
+  margin-bottom: 13*var.$spacer;
+
+  @include mixin.breakpoint(md) {
+    margin-bottom: 5*var.$spacer;
+  }
+}
+
+.imageslider-element, .reviews-element {
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var.$spacer;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    background: var(--color-black);
+    height: 6px;
+    width: 6px;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: var(--color-black);
+
+    @include mixin.breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  .swiper {
+    padding-bottom: 7*var.$spacer;
+  }
+}
+
+.imageslider-element {
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}

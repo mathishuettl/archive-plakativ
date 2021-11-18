@@ -1,0 +1,61 @@
+.c-wysiwyg-container {
+  margin-bottom: 13*var.$spacer;
+}
+
+.c-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5*var.$spacer;
+}
+
+.c-author-text {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 3.3rem;
+}
+
+.c-slide {
+  margin: 0 auto;
+  max-width: 950px;
+  background: var(--color-white);
+  padding: 10*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    padding: 4*var.$spacer;
+  }
+}
+
+.c-portrait {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 2*var.$spacer;
+}
+
+.c-slider-wrapper {
+  position: relative;
+}
+
+.c-quote {
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.c-quote-left {
+  left: 12*var.$spacer;
+
+  @include mixin.breakpoint(lg){
+    left: 4*var.$spacer;
+  }
+}
+
+.c-quote-right {
+  right: 12*var.$spacer;
+  transform: rotate(180deg) translateY(50%);
+
+  @include mixin.breakpoint(lg){
+    right: 4*var.$spacer;
+  }
+}

@@ -1,0 +1,27 @@
+.c-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2*var.$spacer;
+  max-width: var(--container-width-xl);
+  position: relative;
+
+  @include mixin.breakpoint(lg){
+    max-width: var(--container-width-lg);
+  }
+
+  @include mixin.breakpoint(md){
+    max-width: var(--container-width-md);
+  }
+
+  @include mixin.breakpoint(sm){
+    max-width: var(--container-width-sm);
+  }
+}
+
+.c-is-boxed {
+  max-width: var(--container-width-boxed);
+}
+
+.c-aligned-left {
+  margin-left: 0;
+}

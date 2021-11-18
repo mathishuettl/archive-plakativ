@@ -1,0 +1,12 @@
+.c-image {
+  width: calc(100% - 30*#{var.$spacer});
+  margin: 0 auto;
+
+  @include mixin.breakpoint(md) {
+    width: calc(100% - 15*#{var.$spacer});
+  }
+
+  @include mixin.breakpoint(sm) {
+    width: 100%;
+  }
+}

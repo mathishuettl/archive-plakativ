@@ -1,0 +1,66 @@
+.c-input {
+  display: block;
+  width: 100%;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: 0;
+  background-color: var(--color-input-background);
+  border: 2px solid var(--color-input-border);
+  background-clip: padding-box;
+  border-radius: .3rem;
+  transition: box-shadow .15s ease-in-out;
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-input-focus);
+  }
+}
+
+.c-error {
+  border: 2px solid var(--color-error);
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-error-focus);
+  }
+}
+
+.c-success {
+  border: 2px solid var(--color-error);
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-error-focus);
+  }
+}
+
+.c-label {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 0.925rem;
+  margin-bottom: 8px;
+}
+
+.c-error-message {
+  font-family: var(--font-primary);
+  font-size: 0.925rem;
+  color: var(--color-error);
+  margin-top: 4px;
+}
+
+.c-primary {
+  border-color: var(--color-primary);
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-primary-focus);
+  }
+}
+
+.c-secondary {
+  border-color: var(--color-secondary);
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem var(--color-secondary-focus);
+  }
+}

@@ -1,0 +1,76 @@
+.c-hero-section {
+  background: var(--color-black);
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  padding: 0;
+
+  @include mixin.breakpoint(sm) {
+    display: block;
+  }
+}
+
+.c-small {
+  .c-heading {
+    margin: 9*var.$spacer 0;
+  }
+  .c-text-container {
+    justify-content: center;
+  }
+}
+
+.c-text-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid white;
+  z-index: 3;
+  margin-top: 1px;
+}
+
+.c-full-height {
+  height: calc(100vh - var(--header-height));
+
+  @include mixin.breakpoint(sm) {
+    height: auto;
+  }
+}
+
+.c-heading-wrapper {
+  max-width: 60*var.$spacer;
+}
+
+.c-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c-full-height-image {
+  position: absolute;
+  width: 75*var.$spacer;
+  bottom: 0;
+  right: 0;
+  margin-right: inherit;
+
+  @include mixin.breakpoint(sm) {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin-top: 7*var.$spacer;
+  }
+}
+
+.c-image-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include mixin.breakpoint(sm) {
+    position: static;
+  }
+}
+
+.c-button {
+  margin-top: 3*var.$spacer;
+}

@@ -1,0 +1,14 @@
+.c-text {
+  @include mixin.kanit;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+
+  @include mixin.breakpoint(md) {
+    margin-bottom: 0;
+  }
+}
+
+.c-link {
+  text-decoration: none;
+}

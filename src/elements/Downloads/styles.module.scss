@@ -1,0 +1,17 @@
+.c-heading {
+  &:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.c-downloads {
+  max-width: 82*var.$spacer;
+  margin: 0 auto;
+  margin-top: 10*var.$spacer;
+
+  @include mixin.breakpoint(sm) {
+    margin-top: 3*var.$spacer;
+  }
+}

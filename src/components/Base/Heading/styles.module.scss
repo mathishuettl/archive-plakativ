@@ -1,0 +1,40 @@
+.c-heading {
+  color: var(--color-black);
+  font-family: var(--font-primary);
+}
+
+// Scaled by Major Third (1.250)
+.c-h1 {
+  @include mixin.h1();
+}
+
+.c-h2 {
+  @include mixin.h2();
+}
+
+.c-h3 {
+  @include mixin.kanit();
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+}
+
+.c-h4 {
+  @include mixin.h4();
+}
+
+.c-h5 {
+  font-size: 1.25rem;
+}
+
+.c-h6 {
+  font-size: 1rem;
+}
+
+.c-dark {
+  color: var(--color-black);
+}
+
+.c-light {
+  color: var(--color-white);
+}
